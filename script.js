@@ -36,7 +36,9 @@ document.getElementById("login-form").addEventListener("submit", function(event)
         // thomas/evaristo
         typeErrorMessage("Objeto de medo.", errorMessage);  // Chama a função para efeito de digitação
         errorMessage.style.color = "#FFF";  // Define a cor da fonte
-
+    } else if (username === "wonk" && password === "corp") {
+        // Redireciona para o CMD
+        window.location.href = "cmd.html"; // Altere para o caminho correto onde está o CMD
     }else  if (username === "deus" && password === "ceo") {
         // Mostrar a imagem de falha
         deathScreen.style.display = "flex"; // Exibir a tela de falha
