@@ -11,19 +11,32 @@ document.getElementById("login-form").addEventListener("submit", function(event)
     if (username === "joao" && password === "evaristo") {
         //joao/evaristo
         typeErrorMessage("O homem que confiou demais.", errorMessage);  // Chama a função para efeito de digitação
+        errorMessage.style.color = "purple";  // Define a cor da fonte
+    } else if (username === "elizabeth" && password === "rodrigues"){
+        //elizabeth/rodrigues
+        typeErrorMessage("Das sombras, plantei; ele floresceu. Agora, é hora de colher.", errorMessage)
         errorMessage.style.color = "#FFF";  // Define a cor da fonte
     } else if (username === "thomas" && password === "navarro") {
         // thomas/navarro
         typeErrorMessage("O primeiro receptáculo.", errorMessage);  // Chama a função para efeito de digitação
-        errorMessage.style.color = "#FFF";  // Define a cor da fonte
+        errorMessage.style.color = "yellow";  // Define a cor da fonte
     } else if (username === "carlos" && password === "jose") {
         // carlos/jose
         typeErrorMessage("A vingança é o fogo que consome até a alma do mais justo.", errorMessage);  // Chama a função para efeito de digitação
-        errorMessage.style.color = "#FFF";  // Define a cor da fonte
+        errorMessage.style.color = "red";  // Define a cor da fonte
     } else if (username === "sato" && password === "kaito") {
         // sato/kaito
         typeErrorMessage("Ele não escolheu, mas agora não consegue mais viver sem.", errorMessage);  // Chama a função para efeito de digitação
+        errorMessage.style.color = "black";  // Define a cor da fonte
+    } else if (username === "lidia" && password === "goncalves") {
+        // lidia/goncalves
+        typeErrorMessage("Para: ████████ - Departamento de Operações Especiais\nAssunto: Relatório de Captura - Lídia Gonçalves\nA captura de Lídia Gonçalves foi realizada com sucesso. A alvos foi interceptada em uma rua isolada durante a madrugada. A operação foi executada sem resistência significativa.\nAtualmente, ela se encontra sob detenção, sem contato com o exterior. Não há sinais de cooperação ou fuga até o momento. Aguardo novas instruções sobre como proceder.\nOperador nº 42", errorMessage);  // Chama a função para efeito de digitação
         errorMessage.style.color = "#FFF";  // Define a cor da fonte
+    } else if (username === "thomas" && password === "evaristo") {
+        // thomas/evaristo
+        typeErrorMessage("Objeto de medo.", errorMessage);  // Chama a função para efeito de digitação
+        errorMessage.style.color = "#FFF";  // Define a cor da fonte
+
     }else  if (username === "deus" && password === "ceo") {
         // Mostrar a imagem de falha
         deathScreen.style.display = "flex"; // Exibir a tela de falha
