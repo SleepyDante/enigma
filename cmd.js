@@ -51,6 +51,9 @@ function executeCommand(command) {
                 audio.play();
                 response = "Reproduzindo áudio...";
                 break;
+        case "user.surname":
+            response = "DEUS DO MEDO ESPERA TODOS VOCÊS PARA A ABERTURA DO ABISMO, ATÉ LÁ!"
+            break;
         default:
             response = `'${command}' não é reconhecido como um comando interno ou externo,\num programa operável ou um arquivo em lotes.`;
     }
